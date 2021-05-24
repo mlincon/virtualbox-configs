@@ -26,7 +26,7 @@ echo "=========== Installing miniconda ==========="
 source ./install/miniconda.sh
 
 echo "=========== Installing golang ==========="
-source ./install/golang.sh 1.16.4
+source ./install/golang.sh "1.16.4"
 
 echo "=========== Installing Docker and Docker-compose ==========="
 source ./install/docker.sh

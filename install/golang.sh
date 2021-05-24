@@ -7,16 +7,16 @@ cd ~
 
 # download the required version and archict
 VERSION=$1 
-$ curl -O -L "https://golang.org/dl/go${VERSION}.linux-amd64.tar.gz"
+curl -O -L "https://golang.org/dl/go${VERSION}.linux-amd64.tar.gz"
 
 # extract tarball
-rm -rf /usr/local/go && tar -C /usr/local -xzf "go${VERSION}.linux-${ARCH}.tar.gz"
+rm -rf /usr/local/go && tar -C /usr/local -xzf "go${VERSION}.linux-amd64.tar.gz"
 
 # append to zshrc
-echo "#go" >> ~/.zshrc
-echo "export PATH=$PATH:/usr/local/go/bin" >> >> ~/.zshrc
+echo "\n#go" >> ~/.zshrc
+echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.zshrc
 
 }
 
 # log
-install_go > log/go_installation.log
+install_go $1 > log/go_installation.log
