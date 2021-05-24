@@ -13,14 +13,14 @@ apt install -y apt-transport-http
 apt update
 apt install -y code
 
-# move settings
-cp install/vscode-settings.json $HOME/.config/Code/User/settings.json
-
 # install extensions
 while read extension
 do
     code --install-extension "$extension"
 done < install/vscode-extensions.txt
+
+# move settings
+cp install/vscode-settings.json $HOME/.config/Code/User/settings.json
 
 }
 
