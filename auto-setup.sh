@@ -11,16 +11,16 @@ apt-get install -y \
     unzip
 
 echo "=========== Installing oh-my-zsh + Antigen ==========="
-source ./install-oh-my-zsh.sh
+source ./install/oh-my-zsh.sh
 
 echo "=========== Installing miniconde ==========="
-source ./install-miniconda.sh
+source ./install/miniconda.sh
 
 echo "=========== Installing Docker ==========="
-source ./install-docker.sh
+source ./install/docker.sh
 
 echo "=========== Installing HashiCorp Terraform ==========="
-source ./install-terraform.sh
+source ./install/terraform.sh
 
 echo "=========== Installing VSCode ==========="
-source ./install-vscode.sh
+source ./install/vscode.sh

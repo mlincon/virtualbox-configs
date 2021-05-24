@@ -11,3 +11,6 @@ unzip awscliv2.zip
 # install
 sudo ./aws/install
 }
+
+# log
+install_aws_cli > log/aws_installation.log

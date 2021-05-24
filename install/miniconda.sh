@@ -17,4 +17,4 @@ rm -rf ~/miniconda3/miniconda.sh
 }
 
 # log
-install_miniconda > miniconda_installation.log
+install_miniconda > log/miniconda_installation.log

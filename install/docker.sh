@@ -39,4 +39,4 @@ newgrp docker
 }
 
 # log
-install_docker > docker_installation.log
+install_docker > log/docker_installation.log

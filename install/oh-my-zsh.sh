@@ -49,4 +49,4 @@ chsh -s $(which zsh)
 }
 
 # log
-install_zsh > zsh_installation.log
+install_zsh > log/zsh_installation.log

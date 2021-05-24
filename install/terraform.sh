@@ -20,4 +20,4 @@ terraform -install-autocomplete
 }
 
 # log
-install_terraform > terraform_installation.log
+install_terraform > log/terraform_installation.log
