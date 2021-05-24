@@ -4,7 +4,7 @@ Bash scripts for installing required software/programs when setting up a new vir
 - AWS CLI
 - Docker and Docker-compose
 - Git
-- Go
+- Go (the version must be specified)
 - jq
 - Miniconda3
 - Postbird for Postgres
