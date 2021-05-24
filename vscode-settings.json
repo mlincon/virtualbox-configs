@@ -1,0 +1,65 @@
+{
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "git.ignoreMissingGitWarning": true,
+    "workbench.activityBar.visible": true,
+    "yaml.customTags": [
+        "!Equals sequence",
+        "!FindInMap sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Join sequence",
+        "!Ref",
+        "!Select sequence",
+        "!Split sequence",
+        "!Sub"
+    ],
+    "[yaml]":{
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.autoIndent": "full"
+    },
+    "jshint.options": {
+        "esversion": 8
+    },
+    "eslint.options": {
+        "env":{
+            "es6":true
+        },
+        "parserOptions": {
+            "ecmaVersion": 8
+        }
+    },
+    "todo-tree.tree.showScanModeButton": false,
+    "scm.alwaysShowRepositories": true,
+    "aws.profile": "profile:default",
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "default",
+            "filenamePattern": "git-rebase-todo"
+        }
+    ],
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "jupyter.askForKernelRestart": false,
+    "terraform.languageServer": {
+        "editor.tabsize": 2,
+        "external": true,
+        "pathToBinary": "",
+        "args": [
+            "serve"
+        ],
+        "maxNumberOfProblems": 100,
+        "trace.server": "off"
+    },
+    "python.languageServer": "Pylance"
+}
