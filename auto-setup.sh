@@ -10,6 +10,15 @@ apt-get install -y \
     software-properties-common \
     unzip
 
+# get programs from snap
+apt update
+apt install -y snapd
+
+echo "=========== Installing from Snap ==========="
+snap install postbird
+snap install postman
+
+# 
 echo "=========== Installing oh-my-zsh + Antigen ==========="
 source ./install/oh-my-zsh.sh
 
