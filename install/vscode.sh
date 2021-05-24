@@ -14,15 +14,15 @@ apt update
 apt install -y code
 
 # move settings
-cp vscode-settings.json $HOME/.config/Code/User/settings.json
+cp install/vscode-settings.json $HOME/.config/Code/User/settings.json
 
 # install extensions
 while read extension
 do
     code --install-extension "$extension"
-done < vscode-extensions.txt
+done < install/vscode-extensions.txt
 
 }
 
 # log
-install_vscode > vscode_installation.log
+install_vscode > log/vscode_installation.log
