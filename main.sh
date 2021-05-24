@@ -28,8 +28,9 @@ source ./install/miniconda.sh
 echo "=========== Installing golang ==========="
 source ./install/golang.sh
 
-echo "=========== Installing Docker ==========="
+echo "=========== Installing Docker and Docker-compose ==========="
 source ./install/docker.sh
+source ./install/docker-compose.sh
 
 echo "=========== Installing HashiCorp Terraform ==========="
 source ./install/terraform.sh
