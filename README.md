@@ -11,4 +11,4 @@ Bash scripts for installing required software/programs when setting up a new vir
 - Postman
 - Terraform CLI
 - VSCode (along with extensions) 
-- Zsh (will be set to default shell)
+- Zsh (with Powerlevel10k theme and will be set to default shell)

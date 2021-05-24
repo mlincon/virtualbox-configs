@@ -25,8 +25,8 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Select theme.
-# antigen theme denysdovhan/spaceship-prompt
 # antigen theme bureau
+antigen theme romkatv/powerlevel10k
 
 # Tell Antigen that you're done.
 antigen apply
@@ -42,6 +42,10 @@ source ~/antigen.zsh
 antigen init ~/.antigenrc
 EOL
 
+# use powerkevek10k theme
+cp data/.p10k.zsh ~/.p10k.zsh
+echo "\n# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh." >> ~/.zshrc
+echo "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" >> ~/.zshrc
 
 # set zsh to default
 chsh -s $(which zsh)
