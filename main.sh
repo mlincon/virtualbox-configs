@@ -22,8 +22,11 @@ snap install postman
 echo "=========== Installing oh-my-zsh + Antigen ==========="
 source ./install/oh-my-zsh.sh
 
-echo "=========== Installing miniconde ==========="
+echo "=========== Installing miniconda ==========="
 source ./install/miniconda.sh
+
+echo "=========== Installing golang ==========="
+source ./install/golang.sh
 
 echo "=========== Installing Docker ==========="
 source ./install/docker.sh
