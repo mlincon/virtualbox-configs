@@ -44,8 +44,10 @@ EOL
 
 # use powerkevek10k theme
 cp data/.p10k.zsh ~/.p10k.zsh
-echo "\n# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh." >> ~/.zshrc
-echo "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh" >> ~/.zshrc
+cat >>~/.zshrc <<EOL
+# To customize prompt, run \`p10k configure\` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+EOL
 
 # set zsh to default
 chsh -s $(which zsh)

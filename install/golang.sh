@@ -13,8 +13,10 @@ curl -O -L "https://golang.org/dl/go${VERSION}.linux-amd64.tar.gz"
 rm -rf /usr/local/go && tar -C /usr/local -xzf "go${VERSION}.linux-amd64.tar.gz"
 
 # append to zshrc
-echo "\n#go" >> ~/.zshrc
-echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.zshrc
+cat >>~/.zshrc <<EOL
+#go
+export PATH=\$PATH:/usr/local/go/bin
+EOL
 
 }
 
