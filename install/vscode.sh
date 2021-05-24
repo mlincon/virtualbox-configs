@@ -17,10 +17,10 @@ apt install -y code
 while read extension
 do
     code --install-extension "$extension"
-done < install/vscode-extensions.txt
+done < data/vscode-extensions.txt
 
 # move settings
-cp install/vscode-settings.json $HOME/.config/Code/User/settings.json
+cp data/vscode-settings.json $HOME/.config/Code/User/settings.json
 
 }
 
