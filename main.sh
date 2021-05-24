@@ -33,3 +33,8 @@ source ./install/terraform.sh
 
 echo "=========== Installing VSCode ==========="
 source ./install/vscode.sh
+
+
+# clean up cache and autoremove
+apt-get clean
+apt autoremove --purge
