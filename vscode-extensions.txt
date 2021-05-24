@@ -1,0 +1,15 @@
+amazonwebservices.aws-toolkit-vscode
+CoenraadS.bracket-pair-colorizer-2
+eamodio.gitlens
+golang.go
+Gruntfuggly.todo-tree
+hashicorp.terraform
+mhutchie.git-graph
+ms-azuretools.vscode-docker
+ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
+ms-vscode-remote.remote-containers
+redhat.vscode-yaml
+ritwickdey.LiveServer
+shd101wyy.markdown-preview-enhanced
