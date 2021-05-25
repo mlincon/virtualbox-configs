@@ -1,5 +1,6 @@
 Bash scripts for installing required software/programs when setting up a new virtual linux.
 
+##### Installations
 `main.sh` installs the following programs:
 - AWS CLI
 - Docker and Docker-compose
@@ -15,10 +16,10 @@ Bash scripts for installing required software/programs when setting up a new vir
 - Zsh (with Powerlevel10k theme and will be set to default shell)
 
 
-### VSCode settings
+##### VSCode settings
 `settings.json` file location
 - Windows `%APPDATA%\Code\User\settings.json`
 - macOS `$HOME/Library/Application Support/Code/User/settings.json`
-- Linux `$HOME/.config/Code/User/settings.json
+- Linux `$HOME/.config/Code/User/settings.json`
 
 Official doc on settings: `https://code.visualstudio.com/docs/getstarted/settings`
