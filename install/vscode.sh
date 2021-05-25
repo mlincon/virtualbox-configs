@@ -12,9 +12,9 @@ sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/p
 rm -f packages.microsoft.gpg
 
 # update package cache and install
-apt install -y apt-transport-http
-apt update
-apt install -y code
+sudo apt install -y apt-transport-http
+sudo apt update
+sudo apt install -y code
 
 # install extensions
 while read extension

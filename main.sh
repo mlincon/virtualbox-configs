@@ -1,8 +1,11 @@
 #!/usr/bin/bash
 
-# ensure that your system is up to date, and you have the gnupg, software-properties-common, and curl packages installed
-apt-get update
-apt-get install -y \
+# current directory
+cwdir="$PWD"
+
+# # ensure that your system is up to date, and you have the gnupg, software-properties-common, and curl packages installed
+sudo apt-get update
+sudo apt-get install -y \
     curl \
     gnupg \
     jq \
@@ -11,24 +14,19 @@ apt-get install -y \
 
 # source scripts
 source ./install/git.sh
-source ./install/oh-my-zsh.sh
-source ./install/miniconda.sh
-source ./install/golang.sh "1.16.4"
-source ./install/docker.sh
-source ./install/docker-compose.sh
-source ./install/terraform.sh
-source ./install/vscode.sh
-source ./install/postgresql.sh
-
-# get programs from snap
-apt update
-apt install -y snapd
-snap install postman
-snap install postbird
+cd $cwdir && source ./install/aws.sh
+cd $cwdir && source ./install/oh-my-zsh.sh
+cd $cwdir && source ./install/golang.sh "1.16.4"
+cd $cwdir && source ./install/miniconda.sh
+cd $cwdir && source ./install/docker.sh
+cd $cwdir && source ./install/docker-compose.sh
+cd $cwdir && source ./install/terraform.sh
+cd $cwdir && source ./install/vscode.sh
+cd $cwdir && source ./install/postgresql.sh
 
 # clean up cache and autoremove
-apt-get clean
-apt autoremove --purge
+sudo apt-get clean
+sudo apt autoremove --purge
 
 # additional configuration
 source ./helper/git-config.sh

@@ -5,11 +5,11 @@ echo "=========== Installing Docker ==========="
 install_docker () {
 
 # uninstall older versions
-apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get remove docker docker-engine docker.io containerd runc
 
 # set-up repository
-apt-get update
-apt-get install -y \
+sudo apt-get update
+sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -25,8 +25,8 @@ echo \
 $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 # install docker engine
-apt-get update
-apt-get install -y docker-ce docker-ce-cli containerd.io
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
 }
 

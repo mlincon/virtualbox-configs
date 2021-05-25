@@ -8,13 +8,14 @@ Bash scripts for installing required software/programs in Linux (debian/ubuntu).
 - Go (the version must be specified)
 - jq
 - Miniconda3
-- Postbird for PostgreSQL
 - PostgreSQL
-- Postman
 - Terraform CLI
 - VSCode (along with extensions) 
 - Zsh (with Powerlevel10k theme and will be set to default shell)
 
+Run `main.sh` as non-root user, i.e. `./main.sh`. During installation, there will be prompt for passwords.  
+
+After installation, restart for some of the changes to take in effect.
 
 ##### VSCode settings
 `settings.json` file location
