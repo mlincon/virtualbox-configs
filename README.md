@@ -1,4 +1,4 @@
-Bash scripts for installing required software/programs when setting up a new virtual linux.
+Bash scripts for installing required software/programs in Linux (debian/ubuntu).
 
 ##### Installations
 `main.sh` installs the following programs:
