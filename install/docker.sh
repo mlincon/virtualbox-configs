@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+
+echo "=========== Installing Docker ==========="
 install_docker () {
 
 # uninstall older versions
@@ -26,17 +28,7 @@ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev
 apt-get update
 apt-get install -y docker-ce docker-ce-cli containerd.io
 
-
-# add user to docker group
-
-# create docker group if it does not exist
-groupadd docker
-
-# add user to the docker group
-usermod -aG docker $USER
-newgrp docker
-
 }
 
-# log
+# log stdout
 install_docker > log/docker_installation.log
