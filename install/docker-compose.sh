@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+
+echo "=========== Installing Docker-compose ==========="
 install_docker_compose () {
 
 # set-up repository
@@ -10,5 +12,5 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 }
 
-# log
+# log stdout
 install_docker_compose > log/docker-compose_installation.log

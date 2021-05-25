@@ -4,41 +4,32 @@
 apt-get update
 apt-get install -y \
     curl \
-    git \
     gnupg \
     jq \
     software-properties-common \
     unzip
 
+# source scripts
+source ./install/git.sh
+source ./install/oh-my-zsh.sh
+source ./install/miniconda.sh
+source ./install/golang.sh "1.16.4"
+source ./install/docker.sh
+source ./install/docker-compose.sh
+source ./install/terraform.sh
+source ./install/vscode.sh
+source ./install/postgresql.sh
+
 # get programs from snap
 apt update
 apt install -y snapd
-
-echo "=========== Installing from Snap ==========="
-snap install postbird
 snap install postman
-
-# 
-echo "=========== Installing oh-my-zsh + Antigen ==========="
-source ./install/oh-my-zsh.sh
-
-echo "=========== Installing miniconda ==========="
-source ./install/miniconda.sh
-
-echo "=========== Installing golang ==========="
-source ./install/golang.sh "1.16.4"
-
-echo "=========== Installing Docker and Docker-compose ==========="
-source ./install/docker.sh
-source ./install/docker-compose.sh
-
-echo "=========== Installing HashiCorp Terraform ==========="
-source ./install/terraform.sh
-
-echo "=========== Installing VSCode ==========="
-source ./install/vscode.sh
-
+snap install postbird
 
 # clean up cache and autoremove
 apt-get clean
 apt autoremove --purge
+
+# additional configuration
+source ./helper/git-config.sh
+source ./helper/docker-as-non-root-user.sh

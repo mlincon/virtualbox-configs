@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+
+echo "=========== Installing VSCode ==========="
+
 install_vscode () {
 
 # add repository and key manually
@@ -24,5 +27,5 @@ cp data/vscode-settings.json $HOME/.config/Code/User/settings.json
 
 }
 
-# log
+# log stdout
 install_vscode > log/vscode_installation.log

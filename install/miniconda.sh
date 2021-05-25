@@ -1,5 +1,6 @@
 #!/usr/bin/bash
 
+echo "=========== Installing miniconda ==========="
 install_miniconda () {
 
 # Source: https://dev.to/waylonwalker/installing-miniconda-on-linux-from-the-command-line-4ad7
@@ -16,5 +17,5 @@ rm -rf ~/miniconda3/miniconda.sh
 
 }
 
-# log
+# log stdout
 install_miniconda > log/miniconda_installation.log

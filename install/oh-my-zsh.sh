@@ -1,5 +1,6 @@
 #!/usr/bin/bash/
 
+echo "=========== Installing oh-my-zsh + Antigen ==========="
 install_zsh () {
 
 # install zsh
@@ -54,5 +55,5 @@ chsh -s $(which zsh)
 
 }
 
-# log
+# log stdout
 install_zsh > log/zsh_installation.log

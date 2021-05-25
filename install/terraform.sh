@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+echo "=========== Installing HashiCorp Terraform ==========="
+
 install_terraform () {
 
 # add the HashiCorp GPG key
@@ -19,5 +21,5 @@ terraform -install-autocomplete
 
 }
 
-# log
+# log stdout
 install_terraform > log/terraform_installation.log
