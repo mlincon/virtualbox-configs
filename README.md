@@ -13,7 +13,7 @@ Bash scripts for installing required software/programs in Linux (debian/ubuntu).
 - VSCode (along with extensions) 
 - Zsh (with Powerlevel10k theme and will be set to default shell)
 
-Run `main.sh` as non-root user, i.e. `./main.sh`. During installation, there will be prompt for passwords.  
+Run `main.sh` as non-root user, i.e. `./main.sh`. During installation, there will be prompt for password (`sudo`).  
 
 After installation, restart for some of the changes to take in effect.
 
