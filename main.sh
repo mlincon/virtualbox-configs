@@ -9,6 +9,7 @@ sudo apt-get install -y \
     curl \
     gnupg \
     jq \
+    openjdk-8-jre \
     software-properties-common \
     unzip
 
