@@ -61,5 +61,6 @@
         "maxNumberOfProblems": 100,
         "trace.server": "off"
     },
-    "python.languageServer": "Pylance"
+    "python.languageServer": "Pylance",
+    "editor.rulers": [ 80 ]
 }
