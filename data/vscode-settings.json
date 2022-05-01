@@ -48,6 +48,10 @@
     
     "jupyter.sendSelectionToInteractiveWindow": true,
     "jupyter.askForKernelRestart": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
     "python.languageServer": "Pylance",
     "python.analysis.typeCheckingMode": "basic",
     "editor.formatOnSaveMode": "file",
